@@ -162,7 +162,7 @@ class Main(QWidget):
             band_param = rasterio.open(B_list[0],'r') # opens a band to fetch the values needed to write to file
             height = band_param.height # height of the array
             width = band_param.width # width of the array
-            affine = band_param.affine # geometric transformation used in writing
+            affine = band_param.transform # geometric transformation used in writing
             crs = band_param.crs # gets the spatial reference of the band
             band_param.close()     # close the file   
             for x in B_list: # open each band and perform the following calculation
