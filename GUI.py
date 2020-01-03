@@ -653,7 +653,7 @@ class Main(QWidget):
         
         # setup the size of the window
         self.setGeometry(200, 300,500, 200) # x, y, width, height, in pixels
-        self.setWindowTitle("RASTERIOVI") # title appears in the top bar of the dialog box
+        self.setWindowTitle("LS8 Vegetation Indice Calculator") # title appears in the top bar of the dialog box
         
         self.show() # display the dialog to the user
         
